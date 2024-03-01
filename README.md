@@ -24,7 +24,6 @@ What I did was:
 - Intercepted a request to H1 hacktivity
 - As much as I remember, I either modified the limit parameter from 25 to 10,000 (that didn't work i think) or iterated through 1 to 10,000 with 25/50 step each to collect json response with every 25 or 50 h1 reports till I reach 10,000 (they don't allow more than 10,000 for some reason idk why).
 - Processed that json response and collected report_id's
-- Added `https://hackerone.com/reports/` prefix to add report ids
 - That's the final python script:
 
 ```python
